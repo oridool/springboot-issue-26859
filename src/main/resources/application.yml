@@ -1,2 +1,13 @@
 server:
   port: 19019
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      enabled: true
+    info:
+      enabled: true
